@@ -1,5 +1,6 @@
 # Co Tuong Android basic
 This is a very simple Chinese chess game just for fun!
+This is app use for android, and use for ebook (Handheld PC)
 
 # eBook use
 Likebook P6 (2022)
