@@ -154,7 +154,7 @@ public class GameLogic implements Runnable {
             }
             sqSelected = sq;
             drawSquare(sq);
-            playSound(RESP_CLICK);
+//            playSound(RESP_CLICK);
             mGameView.postRepaint();
         } else if (sqSelected > 0) {
             int mv = Position.MOVE(sqSelected, sq);
@@ -162,7 +162,7 @@ public class GameLogic implements Runnable {
                 return;
             }
             if (!pos.makeMove(mv)) {
-                playSound(RESP_ILLEGAL);
+//                playSound(RESP_ILLEGAL);
                 return;
             }
             int response = pos.inCheck() ? RESP_CHECK :
@@ -173,7 +173,7 @@ public class GameLogic implements Runnable {
             mvLast = mv;
             sqSelected = 0;
             drawMove(mv);
-            playSound(response);
+//            playSound(response);
             if (!getResult()) {
                 thinking();
             } else {
@@ -195,9 +195,9 @@ public class GameLogic implements Runnable {
     }
 
     private void playSound(int response) {
-        if (mGameCallback != null) {
-            mGameCallback.postPlaySound(response);
-        }
+//        if (mGameCallback != null) {
+//            mGameCallback.postPlaySound(response);
+//        }
     }
 
     private void showMessage(String message) {
@@ -244,7 +244,7 @@ public class GameLogic implements Runnable {
 
     private boolean getResult(int response) {
         if (pos.isMate()) {
-            playSound(response < 0 ? RESP_WIN : RESP_LOSS);
+//            playSound(response < 0 ? RESP_WIN : RESP_LOSS);
             showMessage(response < 0 ?
                     R.string.congratulations_you_win : R.string.you_lose_and_try_again);
             return true;
@@ -252,20 +252,20 @@ public class GameLogic implements Runnable {
         int vlRep = pos.repStatus(3);
         if (vlRep > 0) {
             vlRep = (response < 0 ? pos.repValue(vlRep) : -pos.repValue(vlRep));
-            playSound(vlRep > Position.WIN_VALUE ? RESP_LOSS :
-                    vlRep < -Position.WIN_VALUE ? RESP_WIN : RESP_DRAW);
+//            playSound(vlRep > Position.WIN_VALUE ? RESP_LOSS :
+//                    vlRep < -Position.WIN_VALUE ? RESP_WIN : RESP_DRAW);
             showMessage(vlRep > Position.WIN_VALUE ?
                     R.string.play_too_long_as_lose : vlRep < -Position.WIN_VALUE ?
                     R.string.pc_play_too_long_as_lose : R.string.standoff_as_draw);
             return true;
         }
         if (pos.moveNum > 100) {
-            playSound(RESP_DRAW);
+//            playSound(RESP_DRAW);
             showMessage(R.string.both_too_long_as_draw);
             return true;
         }
         if (response >= 0) {
-            playSound(response);
+//            playSound(response);
             pushHistory(currentFen);
             currentFen = pos.toFen();
         }
@@ -282,10 +282,10 @@ public class GameLogic implements Runnable {
     private String popHistory() {
         if (mHistoryList.size() == 0) {
             showMessage(R.string.no_more_histories);
-            playSound(RESP_ILLEGAL);
+//            playSound(RESP_ILLEGAL);
             return null;
         }
-        playSound(RESP_MOVE2);
+//        playSound(RESP_MOVE2);
         return mHistoryList.pollLast();
     }
 }

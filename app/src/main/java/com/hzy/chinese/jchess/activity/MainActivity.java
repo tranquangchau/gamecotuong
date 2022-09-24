@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
         ButterKnife.bind(this);
         mPreference = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         loadDefaultConfig();
-        initSoundPool();
+//        initSoundPool();
         initGameLogic();
     }
 
@@ -140,10 +140,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void postPlaySound(final int soundIndex) {
-        if (mSoundPool != null && mSoundEnable) {
-            int soundId = mSoundList.get(soundIndex);
-            mSoundPool.play(soundId, 1, 1, 0, 0, 1);
-        }
+//        if (mSoundPool != null && mSoundEnable) {
+//            int soundId = mSoundList.get(soundIndex);
+//            mSoundPool.play(soundId, 1, 1, 0, 0, 1);
+//        }
     }
 
     @Override

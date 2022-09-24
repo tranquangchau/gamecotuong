@@ -8,7 +8,7 @@
     <string name="github_project_page" translatable="false">https://github.com/huzongyao/JChineseChess</string>
     <string name="github_release_page" translatable="false">https://github.com/huzongyao/JChineseChess/releases</string>
 
-    <string name="app_name">ChineseChess</string>
+    <string name="app_name">Cờ Tướng</string>
     <string name="now_loading">Loading, Please Wait…</string>
     <string name="load_book_failed">Load Book Failed!</string>
     <string name="congratulations_you_win">Congratulations, You Win！</string>
@@ -31,7 +31,7 @@
     <string name="new_game_started">A New Game Is Started！</string>
     <string name="load_last_game_finish">Saved Game Is Reloaded！</string>
     <string name="no_more_histories">No More Histories To Roll Back！</string>
-    <string name="menu_retract">Retract</string>
+    <string name="menu_retract">Back</string>
     <string name="menu_restart">Restart</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_exit">Exit</string>

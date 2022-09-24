@@ -29,10 +29,10 @@ public class GameConfig {
     public static final int PIECE_THEME_WOOD = 1;
 
     public static final int[] SOUND_RES_ARRAY = {
-            R.raw.click, R.raw.illegal, R.raw.move,
-            R.raw.move2, R.raw.capture, R.raw.capture2,
-            R.raw.check, R.raw.check2, R.raw.win,
-            R.raw.draw, R.raw.loss
+//            R.raw.click, R.raw.illegal, R.raw.move,
+//            R.raw.move2, R.raw.capture, R.raw.capture2,
+//            R.raw.check, R.raw.check2, R.raw.win,
+//            R.raw.draw, R.raw.loss
     };
 
     public static final int[] PIECE_RES_WOOD = {
