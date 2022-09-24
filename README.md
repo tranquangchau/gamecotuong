@@ -13,3 +13,5 @@ app-release-V5.apk
 [<img src="/20220924_172118.jpg" width="250"/>](20220924_172118.jpg)
 
 
+# Fork from
+https://github.com/huzongyao/JChineseChess
