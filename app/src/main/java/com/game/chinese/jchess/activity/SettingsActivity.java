@@ -1,4 +1,4 @@
-package com.hzy.chinese.jchess.activity;
+package com.game.chinese.jchess.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.hzy.chinese.jchess.R;
+import com.game.chinese.jchess.R;
 
 /**
  * Created by tangbull on 2018/3/13.
