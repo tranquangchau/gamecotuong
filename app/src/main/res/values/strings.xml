@@ -1,5 +1,4 @@
 <resources>
-    <string name="pref_sound_key" translatable="false">switch_sound</string>
     <string name="pref_handicap_key" translatable="false">list_handicap</string>
     <string name="pref_level_key" translatable="false">list_computer_power</string>
     <string name="pref_who_first_key" translatable="false">switch_computer_first</string>

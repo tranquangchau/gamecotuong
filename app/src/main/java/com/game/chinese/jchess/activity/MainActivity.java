@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
     private LinkedList<Integer> mSoundList;
     private GameLogic mGameLogic;
     private SharedPreferences mPreference;
-    private boolean mSoundEnable;
+//    private boolean mSoundEnable;
     private int mHandicapIndex;
     private boolean mComputerFlip;
     private int mPieceStyle;
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void loadDefaultConfig() {
-        mSoundEnable = mPreference.getBoolean(getString(R.string.pref_sound_key), true);
+//        mSoundEnable = mPreference.getBoolean(getString(R.string.pref_sound_key), true);
         mHandicapIndex = Integer.parseInt(mPreference.getString(getString(R.string.pref_handicap_key), "0"));
         mComputerFlip = mPreference.getBoolean(getString(R.string.pref_who_first_key), false);
         mPieceStyle = Integer.parseInt(mPreference.getString(getString(R.string.pref_piece_style_key), "0"));
