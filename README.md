@@ -8,6 +8,7 @@ Likebook P6 (2022)
 app-release-V5.apk
 
 #### screenshot
-![screenshot](/20220924_172118.jpg?raw=true =250x)
+
+[<img src="/20220924_172118.jpg" width="250"/>](20220924_172118.jpg)
 
 
